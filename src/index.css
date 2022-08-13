@@ -27,8 +27,8 @@ code {
   text-align: center;
 }
 
-/* INTRODUCTION */
-.introduction-container {
+/* LANDING */
+.landing-container {
   height: 100vh;
   width: 100%;
   position: relative;
@@ -40,7 +40,7 @@ code {
   align-items: center;
 }
 
-.introduction-container h1 {
+.landing-container h1 {
   color: #a6e1fa;
   font-size: 40px;
   line-height: 1.2;
@@ -48,7 +48,6 @@ code {
 }
 
 /* ABOUT ME */
-
 .about-container {
   height: 100vh;
   width: 100%;

@@ -1,7 +1,8 @@
+import React from "react";
 function App() {
   return (
     <div id="website-container">
-      <div className="introduction-container">
+      <div className="landing-container">
         <h1>iman.ai()</h1>
       </div>
       <div className="about-container">
