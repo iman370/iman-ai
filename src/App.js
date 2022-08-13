@@ -1,14 +1,18 @@
 import React from "react";
+import Landing from "./components/Landing";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <div id="website-container">
-      <div className="landing-container">
-        <h1>iman-ai.tech()</h1>
-      </div>
-      <div className="about-container">
-        <h1>Website In Progress</h1>
-      </div>
-      <div className="footer"></div>
+      <Landing />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }
