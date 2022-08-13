@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Testing
-        </a>
-      </header>
+    <div id="website-container">
+      <div className="introduction-container">
+        <h1>iman.ai()</h1>
+      </div>
+      <div className="about-container">
+        <h1>aaaaaa</h1>
+      </div>
+      <div className="footer"></div>
     </div>
   );
 }
+
 
 export default App;
