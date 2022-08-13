@@ -6,7 +6,7 @@ function App() {
         <h1>iman.ai()</h1>
       </div>
       <div className="about-container">
-        <h1>aaaaaa</h1>
+        <h1>Website In Progress</h1>
       </div>
       <div className="footer"></div>
     </div>
