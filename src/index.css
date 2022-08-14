@@ -25,6 +25,38 @@ code {
 /* ANIMATIONS */
 
 
+
+/* NAVIGATION BAR */
+.navbar {
+
+  /* ff 3.6+ */
+  background:-moz-linear-gradient(180deg, rgba(0, 7, 45, 1) 75%, rgba(0, 7, 45, 0) 100%); 
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-linear-gradient(180deg, rgba(0, 7, 45, 1) 75%, rgba(0, 7, 45, 0) 100%);
+
+  /* opera 11.10+ */
+  background:-o-linear-gradient(180deg, rgba(0, 7, 45, 1) 75%, rgba(0, 7, 45, 0) 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00072D', endColorstr='#00072D', GradientType=1 );
+
+  /* ie 10+ */
+  background:-ms-linear-gradient(180deg, rgba(0, 7, 45, 1) 75%, rgba(0, 7, 45, 0) 100%);
+
+  /* global 94%+ browsers support */
+  background:linear-gradient(180deg, rgba(0, 7, 45, 1) 75%, rgba(0, 7, 45, 0) 100%);
+
+  position: fixed; 
+  width: 100%;
+  top: 0;
+  z-index:100;
+}
+
+.navbar p {
+  color:#a6e1fa;
+}
+
 /* FOOTER */
 .footer {
   height: 20vh;
@@ -45,13 +77,21 @@ code {
   text-align: center;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .landing-container h1 {
   color: #a6e1fa;
-  font-size: 40px;
+  font-size: 60px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.landing-container h2 {
+  color: #0e6ba8;
+  font-size: 30px;
   line-height: 1.2;
   margin: 0;
 }
@@ -85,11 +125,13 @@ code {
 }
 
 .about-container .about-me .technologies {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
   padding-left: 30px;
   padding-right: 30px;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .about-container .about-me .technologies .column1 {
@@ -112,6 +154,14 @@ code {
 
 .about-container .about-me p {
   color: #a6e1fa;
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0;
+  align-self: center;
+}
+
+.about-container .about-me b {
+  color: #0e6ba8;
   font-size: 30px;
   line-height: 1.2;
   margin: 0;

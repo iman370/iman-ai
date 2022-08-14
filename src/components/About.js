@@ -8,9 +8,9 @@ function About() {
             </div>
             <div className='divider' />
             <div className='about-me'>
-                <p>Hi, Iman here!</p>
+                <p>Hi, <b>Iman</b> here!</p>
                 <div className='divider-small' />
-                <p>I am currently a third year student studying a bachelors in Computer Science at the University of Birmingham.</p>
+                <p>I am currently a third year student studying a bachelors in <b>Computer Science</b> at the <b>University of Birmingham</b>.</p>
                 <p>I am heavily interested in software engineering, full-stack development (mainly back-end development) and AI/ML.</p>
                 <div className='divider-small' />
                 <p>Here are some of the technologies that I've worked with:</p>
