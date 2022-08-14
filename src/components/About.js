@@ -1,8 +1,15 @@
 import React from 'react'
+import { motion } from "framer-motion";
 
 function About() {
     return (
-        <div className="about-container">
+        <motion.div
+        className="about-container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 3 }}
+        >
             <div className='header'>
                 <h1>iman-ai.about()</h1>
             </div>
@@ -30,7 +37,7 @@ function About() {
                 <div className='divider-small' />
                 <p>Outside of work, I love to spend my time skateboarding or playing video games.</p>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

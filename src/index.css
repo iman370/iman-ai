@@ -23,7 +23,11 @@ code {
 }
 
 /* ANIMATIONS */
-
+/* scroll */
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
+}
 
 
 /* NAVIGATION BAR */
@@ -61,6 +65,12 @@ code {
 .footer {
   height: 20vh;
   background-color: #000;
+}
+
+.footer .rights {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
 }
 
 /* WEBSITE CONTAINER */
