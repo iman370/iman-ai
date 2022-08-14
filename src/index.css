@@ -73,6 +73,10 @@ code {
   justify-self: center;
 }
 
+.footer .rights p {
+  color:#a6e1fa
+}
+
 /* WEBSITE CONTAINER */
 #website-container {
   text-align: center;
