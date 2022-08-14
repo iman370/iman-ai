@@ -13,6 +13,15 @@ code {
     monospace;
 }
 
+/* DIVIDERS */
+.divider {
+  height: 30px;
+}
+
+.divider-small {
+  height: 20px;
+}
+
 /* ANIMATIONS */
 
 
@@ -57,8 +66,56 @@ code {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #001c55;
+  flex-direction: column;
+  align-content: center;
+  background-color: #00072d;
+}
+
+.about-container .header {
+  display: block;
+  width: 100%;
+}
+
+.about-container .about-me {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.about-container .about-me .technologies {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-container .about-me .technologies .column1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-container .about-me .technologies .column2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-container .about-me .technologies .column3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-container .about-me p {
+  color: #a6e1fa;
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0;
+  align-self: center;
 }
 
 .about-container h1 {
