@@ -1,14 +1,17 @@
 import React from 'react'
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 function About() {
+
     return (
+        <AnimatePresence exitBeforeEnter>
         <motion.div
         className="about-container"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        whileInView={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 3 }}
+        viewport={{once:false}}
         >
             <div className='header'>
                 <h1>iman-ai.about()</h1>
@@ -38,6 +41,7 @@ function About() {
                 <p>Outside of work, I love to spend my time skateboarding or playing video games.</p>
             </div>
         </motion.div>
+        </AnimatePresence>
     );
 }
 
