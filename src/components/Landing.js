@@ -13,8 +13,10 @@ function Landing() {
                 <motion.div
                 exit={{y:-1000}}
                 style={{ scale }}>
-                    <h1>iman-ai.tech()</h1>
-                    <h2>Computer Science Student</h2>
+                    <div className='typewriter'>
+                        <h1>iman-ai.tech()</h1>
+                        <h2>Computer Science Student</h2>
+                    </div>
                 </motion.div>)}
             </AnimatePresence>
         </div>

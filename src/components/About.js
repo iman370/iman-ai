@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 function About() {
 
     return (
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence>
         <motion.div
         className="about-container"
         initial={{ opacity: 0 }}
