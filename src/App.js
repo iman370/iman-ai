@@ -3,35 +3,46 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import Landing from "./components/Landing";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 //import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, Move, MoveOut, Sticky} from "react-scroll-motion";
 
 function App() {
-  const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
-  const FadeUp = batch(Fade(), Move(), Sticky());
+  //const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
 
   return (
     <div id="website-container">
       <ScrollContainer>
       <NavBar />
-        <Animator animation={batch(Sticky(), MoveOut(0, -200))}>
-          <Landing />
-        </Animator>
         <ScrollPage>
-          <Animator animation={batch(Fade(), Sticky(), MoveIn(-1000, 0))}>
+          <Animator animation={batch(Sticky(), MoveOut(0, -200))}>
+            <Landing />
+          </Animator>
+        </ScrollPage>
+        <div className='divider' />
+        <ScrollPage>
+          <Animator animation={batch(Fade(), Move(), Sticky())}>
             <About />
           </Animator>
         </ScrollPage>
+        <div className='divider' />
         <ScrollPage>
-          <Animator animation={FadeUp}>
+          <Animator animation={batch(Fade(), Move(), Sticky())}>
+            <Skills />
+          </Animator>
+        </ScrollPage>
+        <div className='divider' />
+        <ScrollPage>
+          <Animator animation={batch(Fade(), Move(), Sticky())}>
             <Projects />
           </Animator>
         </ScrollPage>
+        <div className='divider' />
         <ScrollPage>
-          <Animator animation={FadeUp}>
+          <Animator animation={batch(Fade(), Move(), Sticky())}>
             <Footer />
           </Animator>
         </ScrollPage>

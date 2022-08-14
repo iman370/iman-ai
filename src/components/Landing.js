@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import React from 'react';
 
 function Landing() {
     //const { scrollYProgress } = useScroll({offset: ["end end", "start start"]});

@@ -163,34 +163,6 @@ code {
   padding-right: 30px;
 }
 
-.about-container .about-me .technologies {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap: 20px;
-  justify-items: stretch;
-  align-items: stretch;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.about-container .about-me .technologies .column1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.about-container .about-me .technologies .column2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.about-container .about-me .technologies .column3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .about-container .about-me p {
   color: #a6e1fa;
   font-size: 30px;
@@ -212,6 +184,77 @@ code {
   font-size: 40px;
   line-height: 1.2;
   margin: 0;
+}
+
+/* SKILLS */
+.skills-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  background-color: #00072d;
+}
+
+.skills-container .header {
+  display: block;
+  width: 100%;
+}
+
+.skills-container .header h1 {
+  color: #a6e1fa;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.skills-container .skills p {
+  color: #a6e1fa;
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0;
+  align-self: center;
+}
+
+.skills-container .skills .technologies {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.skills-container .skills .technologies .column1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-container .skills .technologies .column2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-container .skills .technologies .column3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-container .skills .technologies p {
+  color: #a6e1fa;
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0;
+  align-self: center;
 }
 
 /* PROJECTS */
