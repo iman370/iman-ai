@@ -11,41 +11,44 @@ import Footer from "./components/Footer";
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, Move, MoveOut, Sticky} from "react-scroll-motion";
 
 function App() {
-  //const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
 
   return (
     <div id="website-container">
       <ScrollContainer>
       <NavBar />
         <ScrollPage>
+          <div className="section">
           <Animator animation={batch(Sticky(), MoveOut(0, -200))}>
             <Landing />
           </Animator>
+          </div>
         </ScrollPage>
         <div className='divider' />
         <ScrollPage>
+        <div className="section">
           <Animator animation={batch(Fade(), Move(), Sticky())}>
             <About />
           </Animator>
+          </div>
         </ScrollPage>
         <div className='divider' />
         <ScrollPage>
+        <div className="section">
           <Animator animation={batch(Fade(), Move(), Sticky())}>
             <Skills />
           </Animator>
+          </div>
         </ScrollPage>
         <div className='divider' />
         <ScrollPage>
-          <Animator animation={batch(Fade(), Move(), Sticky())}>
+        <div className="section">
+          <Animator animation={batch(Fade(), Sticky())}>
             <Projects />
           </Animator>
+          </div>
         </ScrollPage>
         <div className='divider' />
-        <ScrollPage>
-          <Animator animation={batch(Fade(), Move(), Sticky())}>
-            <Footer />
-          </Animator>
-        </ScrollPage>
+        <Footer />
       </ScrollContainer>
     </div>
   );
