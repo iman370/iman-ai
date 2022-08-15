@@ -155,7 +155,7 @@ code {
 /* ABOUT ME */
 .about-container {
   height: 100vh;
-  width: 100%;
+  width:200vh;
   position: relative;
   padding: 0;
   text-align: center;
@@ -214,7 +214,7 @@ code {
 /* SKILLS */
 .skills-container {
   height: 100vh;
-  width: 100%;
+  width: 200vh;
   position: relative;
   padding: 0;
   text-align: center;
@@ -270,7 +270,7 @@ code {
 /* PROJECTS */
 .projects-container {
   height: 100vh;
-  width: 100%;
+  width: 200vh;
   position: relative;
   padding: 0;
   text-align: center;
@@ -285,7 +285,7 @@ code {
 /* EXTERNAL LINKS AND CONTACT */
 .contacts-container {
   height: 100vh;
-  width: 100%;
+  width: 200vh;
   position: relative;
   padding: 0;
   text-align: center;
