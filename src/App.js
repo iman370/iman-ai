@@ -5,7 +5,7 @@ import Landing from "./components/Landing";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-//import Contact from "./components/Contact";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 import {ScrollContainer} from "react-scroll-motion";
@@ -23,6 +23,8 @@ function App() {
         <Skills />
         <div className="divider-large" />
         <Projects />
+        <div className="divider-large" />
+        <Contact />
         <div className="divider-large" />
       </ScrollContainer>
       <div className="divider-large" />

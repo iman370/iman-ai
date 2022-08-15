@@ -320,5 +320,23 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #001c55;
+}
+
+.contacts-container .header {
+  display: block;
+  width: 100%;
+}
+
+.contacts-container .header h1 {
+  color: #a6e1fa;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.contacts-container .header b {
+  color: #0e6ba8;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
 }
