@@ -8,14 +8,14 @@ import Projects from "./components/Projects";
 //import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, Move, MoveOut, Sticky} from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, Move, MoveOut, Sticky, StickyIn, FadeIn, ZoomIn} from "react-scroll-motion";
 
 function App() {
 
   return (
     <div id="website-container">
-      <ScrollContainer>
       <NavBar />
+      <ScrollContainer>
         <ScrollPage>
           <div className="section">
           <Animator animation={batch(Sticky(), MoveOut(0, -200))}>
@@ -23,7 +23,11 @@ function App() {
           </Animator>
           </div>
         </ScrollPage>
-        <div className='divider' />
+        <ScrollPage>
+          <Animator animation={batch(StickyIn(), FadeIn(), ZoomIn())}>
+            <span></span>
+          </Animator>
+        </ScrollPage>
         <ScrollPage>
         <div className="section">
           <Animator animation={batch(Fade(), Move(), Sticky())}>
@@ -31,7 +35,11 @@ function App() {
           </Animator>
           </div>
         </ScrollPage>
-        <div className='divider' />
+        <ScrollPage>
+          <Animator animation={batch(StickyIn(), FadeIn())}>
+            <span></span>
+          </Animator>
+        </ScrollPage>
         <ScrollPage>
         <div className="section">
           <Animator animation={batch(Fade(), Move(), Sticky())}>
@@ -39,15 +47,23 @@ function App() {
           </Animator>
           </div>
         </ScrollPage>
-        <div className='divider' />
+        <ScrollPage>
+          <Animator animation={batch(StickyIn(), FadeIn())}>
+            <span></span>
+          </Animator>
+        </ScrollPage>
         <ScrollPage>
         <div className="section">
-          <Animator animation={batch(Fade(), Sticky())}>
+          <Animator animation={batch(Fade(), Move(), Sticky())}>
             <Projects />
           </Animator>
           </div>
         </ScrollPage>
-        <div className='divider' />
+        <ScrollPage>
+          <Animator animation={batch(StickyIn(), FadeIn())}>
+            <span></span>
+          </Animator>
+        </ScrollPage>
         <Footer />
       </ScrollContainer>
     </div>

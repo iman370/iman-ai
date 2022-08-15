@@ -97,7 +97,7 @@ code {
 
 /* LANDING */
 .landing-container {
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   position: relative;
   padding: 0;
@@ -281,7 +281,7 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #001c55;
+  background-color: #00072d;
 }
 
 
