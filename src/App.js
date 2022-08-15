@@ -24,8 +24,10 @@ function App() {
         <div className="divider-large" />
         <Projects />
         <div className="divider-large" />
+        <div className="divider" />
       </ScrollContainer>
       <div className="divider-large" />
+      <div className="divider" />
       <Footer />
     </div>
   );

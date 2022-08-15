@@ -276,11 +276,30 @@ code {
   text-align: center;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #00072d;
 }
 
+.projects-container .header {
+  display: block;
+  width: 100%;
+}
+
+.projects-container .header h1 {
+  color: #a6e1fa;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.projects-container .header b {
+  color: #0e6ba8;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+}
 
 /* EXTERNAL LINKS AND CONTACT */
 .contacts-container {
