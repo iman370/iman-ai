@@ -168,6 +168,20 @@ code {
   width: 100%;
 }
 
+.about-container .header h1 {
+  color: #a6e1fa;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.about-container .header b {
+  color: #0e6ba8;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+}
+
 .about-container .about-me {
   display: flex;
   flex-direction: column;
@@ -192,12 +206,6 @@ code {
   align-self: center;
 }
 
-.about-container h1 {
-  color: #a6e1fa;
-  font-size: 40px;
-  line-height: 1.2;
-  margin: 0;
-}
 
 /* SKILLS */
 .skills-container {
@@ -221,6 +229,13 @@ code {
 
 .skills-container .header h1 {
   color: #a6e1fa;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.skills-container .header b {
+  color: #0e6ba8;
   font-size: 40px;
   line-height: 1.2;
   margin: 0;

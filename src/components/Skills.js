@@ -5,7 +5,7 @@ function Skills() {;
     return(
         <div className='skills-container'>
             <div className='header'>
-                <h1>iman-ai.skills()</h1>
+                <h1>iman-ai<b>.skills()</b></h1>
             </div>
             <div className='divider' />
             <div className='skills'>

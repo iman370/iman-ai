@@ -5,7 +5,7 @@ function About() {
     return (
         <div className='about-container'>
             <div className='header'>
-                <h1>iman-ai.about()</h1>
+                <h1>iman-ai<b>.about()</b></h1>
             </div>
             <div className='divider' />
             <div className='about-me'>
