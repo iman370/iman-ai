@@ -18,6 +18,10 @@ code {
   height: 30px;
 }
 
+.divider-width {
+  width: 10px;
+}
+
 .divider-small {
   height: 20px;
 }
@@ -339,4 +343,19 @@ code {
   font-size: 40px;
   line-height: 1.2;
   margin: 0;
+}
+
+.contacts-container .logos-tray {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.contacts-container .logos {
+  align-self: center;
+  height: 3rem;
+  width: 3rem;
 }
