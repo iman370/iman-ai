@@ -1,9 +1,14 @@
 import React from 'react';
 
+import { Animator, ScrollPage, batch, Fade, Move, Sticky} from "react-scroll-motion";
+
 function About() {
 
     return (
-        <div className='about-container'>
+        <ScrollPage>
+        <div className="section">
+          <Animator animation={batch(Fade(), Move(), Sticky())}>
+          <div className='about-container'>
             <div className='header'>
                 <h1>iman-ai<b>.about()</b></h1>
             </div>
@@ -17,6 +22,9 @@ function About() {
                 <p>Outside of work, I love to spend my time skateboarding or playing video games.</p>
             </div>
         </div>
+          </Animator>
+          </div>
+        </ScrollPage>
     );
 }
 

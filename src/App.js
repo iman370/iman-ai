@@ -8,7 +8,7 @@ import Projects from "./components/Projects";
 //import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, Move, MoveOut, Sticky, StickyIn, FadeIn, ZoomIn} from "react-scroll-motion";
+import {ScrollContainer} from "react-scroll-motion";
 
 function App() {
 
@@ -16,56 +16,17 @@ function App() {
     <div id="website-container">
       <NavBar />
       <ScrollContainer>
-        <ScrollPage>
-          <div className="section">
-          <Animator animation={batch(Sticky(), MoveOut(0, -200))}>
-            <Landing />
-          </Animator>
-          </div>
-        </ScrollPage>
-        <ScrollPage>
-          <Animator animation={batch(StickyIn(), FadeIn(), ZoomIn())}>
-            <span></span>
-          </Animator>
-        </ScrollPage>
-        <ScrollPage>
-        <div className="section">
-          <Animator animation={batch(Fade(), Move(), Sticky())}>
-            <About />
-          </Animator>
-          </div>
-        </ScrollPage>
-        <ScrollPage>
-          <Animator animation={batch(StickyIn(), FadeIn())}>
-            <span></span>
-          </Animator>
-        </ScrollPage>
-        <ScrollPage>
-        <div className="section">
-          <Animator animation={batch(Fade(), Move(), Sticky())}>
-            <Skills />
-          </Animator>
-          </div>
-        </ScrollPage>
-        <ScrollPage>
-          <Animator animation={batch(StickyIn(), FadeIn())}>
-            <span></span>
-          </Animator>
-        </ScrollPage>
-        <ScrollPage>
-        <div className="section">
-          <Animator animation={batch(Fade(), Move(), Sticky())}>
-            <Projects />
-          </Animator>
-          </div>
-        </ScrollPage>
-        <ScrollPage>
-          <Animator animation={batch(StickyIn(), FadeIn())}>
-            <span></span>
-          </Animator>
-        </ScrollPage>
-        <Footer />
+        <Landing />
+        <div className="divider-large" />
+        <About />
+        <div className="divider-large" />
+        <Skills />
+        <div className="divider-large" />
+        <Projects />
+        <div className="divider-large" />
       </ScrollContainer>
+      <div className="divider-large" />
+      <Footer />
     </div>
   );
 }

@@ -22,6 +22,10 @@ code {
   height: 20px;
 }
 
+.divider-large {
+  height: 75vh;
+}
+
 /* ANIMATIONS */
 /* scroll */
 .revealUp {
