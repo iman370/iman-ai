@@ -2,6 +2,17 @@ import React from 'react';
 
 function Skills() {;
 
+    const tech_stack = [
+        "Python",
+        "Tensorflow & Keras",
+        "HTML & CSS",
+        "React.js",
+        "Django",
+        "REST API",
+        "Java",
+        "Linux (using Manjaro as a daily driver)"
+    ]
+
     return(
         <div className='skills-container'>
             <div className='header'>
@@ -10,18 +21,13 @@ function Skills() {;
             <div className='divider' />
             <div className='skills'>
                 <p>Here are some of the technologies that I've worked with:</p>
+                <div className='divider-small' />
                 <div className='technologies'>
-                    <div className='column1'>
-                        <p>- Python</p>
-                        <p>- TensorFlow and Keras</p>
-                    </div>
-                    <div className='column2'>
-                        <p>- HTML, CSS and JavaScript</p>
-                        <p>- React, Django and REST API</p>
-                    </div>
-                    <div className='column3'>
-                        <p>- Java</p>
-                    </div>                    
+                    {tech_stack.map(function (tech_item) {
+                    return (
+                        <p>⋄ {tech_item}</p>
+                    );
+                    })}                
                 </div>
             </div>
         </div>
