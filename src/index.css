@@ -26,6 +26,10 @@ code {
   height: 75vh;
 }
 
+.divider-medium {
+  height: 20vh;
+}
+
 /* ANIMATIONS */
 /* scroll */
 .revealUp {
@@ -164,7 +168,6 @@ code {
   justify-content: center;
   flex-direction: column;
   align-content: center;
-  background-color: #00072d;
 }
 
 .about-container .header {
@@ -269,7 +272,6 @@ code {
 
 /* PROJECTS */
 .projects-container {
-  height: 100vh;
   width: 100%;
   position: relative;
   padding: 0;
@@ -279,7 +281,6 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #00072d;
 }
 
 .projects-container .header {
@@ -299,6 +300,13 @@ code {
   font-size: 40px;
   line-height: 1.2;
   margin: 0;
+}
+
+.projects-container .project-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* EXTERNAL LINKS AND CONTACT */

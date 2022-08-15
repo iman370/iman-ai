@@ -17,17 +17,15 @@ function App() {
       <NavBar />
       <ScrollContainer>
         <Landing />
-        <div className="divider-large" />
+        <div className="divider" />
         <About />
         <div className="divider-large" />
         <Skills />
         <div className="divider-large" />
         <Projects />
         <div className="divider-large" />
-        <div className="divider" />
       </ScrollContainer>
       <div className="divider-large" />
-      <div className="divider" />
       <Footer />
     </div>
   );
