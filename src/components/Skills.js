@@ -1,5 +1,5 @@
 import React from 'react';
-import { Animator, ScrollPage, batch, Fade, Move, Sticky } from "react-scroll-motion";
+//import { Animator, ScrollPage, batch, Fade, Move, Sticky } from "react-scroll-motion";
 
 function Skills() {;
 
@@ -15,9 +15,7 @@ function Skills() {;
     ]
 
     return(
-        <ScrollPage>
         <div className="section">
-          <Animator animation={batch(Fade(), Move(), Sticky())}>
             <div className='skills-container'>
                 <div className='header'>
                     <h1>iman-ai<b>.skills()</b></h1>
@@ -35,9 +33,7 @@ function Skills() {;
                     </div>
                 </div>
             </div>
-          </Animator>
-          </div>
-        </ScrollPage>
+            </div>
     );
 }
 

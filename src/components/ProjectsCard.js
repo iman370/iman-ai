@@ -1,23 +1,20 @@
 import React from "react";
-import githubLogo from './images/github-logo.png';
+//import githubLogo from './images/github-logo.png';
 
 function ProjectsCard({title, desc, type, languages, link, githubLink}) {
   return (
-    <div className="card">
-      <div className="card-info">
-        <p className="title">{title}</p>
-        <p className="subtitle">{type}</p>
-      </div>
-      <div className="card-bio">
-        <p className="description">{desc}</p>
-        <p className="languages">{languages}</p>
-        <div className="links-box">
-            <a href={githubLink}>
-                <img className="logos" src={githubLogo} alt="GitHub"/>
-            </a>
+  <div class="project-card">
+    <div class="flip">
+        <div class="front">
+          <h1 class="text-shadow">{title}</h1>
+          <h2>{type}</h2>
         </div>
-      </div>
+        <div class="back">
+          <h2>{desc}</h2>
+          <p>{languages}</p>
+        </div>
     </div>
+  </div>
   );
 };
 

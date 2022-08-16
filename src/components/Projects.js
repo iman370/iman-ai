@@ -1,5 +1,6 @@
 import React from 'react';
-import { Animator, ScrollPage, batch, FadeIn, Move, Sticky } from "react-scroll-motion";
+//import { Animator, ScrollPage, batch, FadeIn, Move, Sticky } from "react-scroll-motion";
+import ProjectsCard from './ProjectsCard';
 
 function Projects() {
 
@@ -47,26 +48,26 @@ function Projects() {
   ]
 
   return(
-    <div className="section projects-container">
-      <ScrollPage>
-        <Animator animation={batch(FadeIn(), Move(), Sticky())}>
+    <div className="projects-container">
             <div className='header'>
               <h1>iman-ai<b>.projects()</b></h1>
               <div className='divider' />
               <div className='divider' />
               <div className='divider' />
             </div>
-        </Animator>
         <div className="project-stack">
           {project_stack.map(function (project){
             return(
-              <Animator animation={batch(FadeIn(), Move(), Sticky())}>
-              <p>aaaaa</p>
-              </Animator>
+                <ProjectsCard
+                title={project.title}
+                desc={project.desc}
+                type={project.type}
+                languages={project.languages}
+                link={project.link}
+                githubLink={project.githubLink} />
             )
           })}
         </div>
-      </ScrollPage>
     </div>
   );
 }

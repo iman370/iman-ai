@@ -8,26 +8,18 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-import {ScrollContainer} from "react-scroll-motion";
+//import {ScrollContainer} from "react-scroll-motion";
 
 function App() {
 
   return (
     <div id="website-container">
       <NavBar />
-      <ScrollContainer>
-        <Landing />
-        <div className="divider" />
-        <About />
-        <div className="divider-large" />
-        <Skills />
-        <div className="divider-large" />
-        <Projects />
-        <div className="divider-large" />
-        <Contact />
-        <div className="divider-large" />
-      </ScrollContainer>
-      <div className="divider-large" />
+      <Landing />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   );
