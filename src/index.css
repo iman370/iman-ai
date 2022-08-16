@@ -468,7 +468,7 @@ code {
 .contacts-container .logos-tray {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   justify-items: center;
   align-items: center;
   justify-self: center;
@@ -479,7 +479,6 @@ code {
 }
 
 .contacts-container .logos {
-  align-self: center;
   height: 3rem;
   width: 3rem;
 }
