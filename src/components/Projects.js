@@ -39,7 +39,7 @@ function Projects() {
     },
     {
       title: 'Neural Network SMS Classifier',
-      desc: 'Uses Neural Networks and NLP to classify whether a text message is ham or spam.',
+      desc: 'Uses Neural Networks and NLP to classify whether a text message is spam.',
       type: 'Machine Learning, NLP',
       languages: 'Tensorflow, keras, pandas',
       link: 'https://colab.research.google.com/drive/1x5jd2pliPuutha7SsmJn0haVti-59-t_?usp=sharing',

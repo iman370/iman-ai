@@ -353,6 +353,8 @@ code {
 }
 
 /* PROJECTS CARD */
+/* Link to this card */
+/* https://codepen.io/aron-tw/pen/pLJqgE */
 .project-card * {
   box-sizing: border-box;
   font-weight: normal;
@@ -424,6 +426,11 @@ code {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
 }
 
+.project-card .flip .back .logos {
+  align-self: center;
+  height: 2rem;
+  width: 2rem;
+}
 
 /* EXTERNAL LINKS AND CONTACT */
 .contacts-container {
@@ -465,6 +472,10 @@ code {
   justify-items: center;
   align-items: center;
   justify-self: center;
+  background-color: #0e6ba8;
+  border-radius: 1rem;
+  padding: 1rem;
+
 }
 
 .contacts-container .logos {
