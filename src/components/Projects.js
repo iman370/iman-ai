@@ -25,7 +25,7 @@ function Projects() {
       title: 'Book Recommendation using KNN',
       desc: 'Uses K-Nearest Neighbours to recommend books that are similar to the given book.',
       type: 'Machine Learning',
-      languages: 'sklearn, pandas',
+      languages: 'scikit-learn, pandas',
       link: 'https://colab.research.google.com/drive/1Shs7fQQDav5nhUpQ7AMwUBjSEiM48iVJ?usp=sharing',
       githubLink: 'https://github.com/iman370/FCC-ML-with-python/blob/main/Projects/fcc_book_recommendation_knn.ipynb',
     },
@@ -51,8 +51,6 @@ function Projects() {
     <div className="projects-container">
             <div className='header'>
               <h1>iman-ai<b>.projects()</b></h1>
-              <div className='divider' />
-              <div className='divider' />
               <div className='divider' />
             </div>
         <div className="project-stack">
