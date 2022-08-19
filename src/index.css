@@ -330,16 +330,6 @@ code {
   margin: 0;
 }
 
-/*
-.projects-container .project-stack {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: aquamarine;
-}
-*/
-
 .projects-container .project-stack {
   display: grid;
   max-width: 90%;
