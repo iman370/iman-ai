@@ -49,23 +49,23 @@ function Projects() {
 
   return(
     <div className="projects-container">
-            <div className='header'>
-              <h1>iman-ai<b>.projects()</b></h1>
-              <div className='divider' />
-            </div>
-        <div className="project-stack">
-          {project_stack.map(function (project){
-            return(
-                <ProjectsCard
-                title={project.title}
-                desc={project.desc}
-                type={project.type}
-                languages={project.languages}
-                link={project.link}
-                githubLink={project.githubLink} />
-            )
-          })}
-        </div>
+      <div className='header'>
+        <h1>iman-ai<b>.projects()</b></h1>
+        <div className='divider' />
+      </div>
+      <div className="project-stack">
+        {project_stack.map(function (project){
+          return(
+            <ProjectsCard
+            title={project.title}
+            desc={project.desc}
+            type={project.type}
+            languages={project.languages}
+            link={project.link}
+            githubLink={project.githubLink} />
+          )
+        })}
+      </div>
     </div>
   );
 }
