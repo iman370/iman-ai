@@ -17,7 +17,7 @@ function About() {
                 <p>I am currently a third year student studying a bachelors in <b>Computer Science</b> at the <b>University of Birmingham</b>.</p>
                 <p>I am heavily interested in software engineering, full-stack development (mainly back-end development) and AI/ML.</p>
                 <div className='divider-small' />
-                <p>Outside of work, I love to spend my time skateboarding or playing video games.</p>
+                <p>Outside of work, I love to spend my time programming a new project or learning something new. I also enjoy skateboarding and playing video games.</p>
             </div>
         </div>
         </div>
