@@ -249,7 +249,6 @@ code {
   justify-content: center;
   flex-direction: column;
   align-content: center;
-  background-color: #00072d;
 }
 
 .skills-container .header {
@@ -296,6 +295,7 @@ code {
 /* PROJECTS */
 .projects-container {
   width: 100%;
+  min-height: 100vh;
   position: relative;
   padding: 0;
   text-align: center;
