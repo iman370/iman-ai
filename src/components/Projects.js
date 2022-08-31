@@ -45,6 +45,14 @@ function Projects() {
       link: 'https://colab.research.google.com/drive/1x5jd2pliPuutha7SsmJn0haVti-59-t_?usp=sharing',
       githubLink: 'https://github.com/iman370/FCC-ML-with-python/blob/main/Projects/Copy_of_fcc_sms_text_classification.ipynb',
     },
+    {
+      title: 'Stroke Prediction',
+      desc: 'Predicts whether a user has or has not had a stroke.',
+      type: 'Machine Learning',
+      languages: 'Tensorflow, scikit-learn, pandas',
+      link: 'N/A',
+      githubLink: 'https://github.com/iman370/ML-Projects/tree/main/StrokePrediction',
+    },
   ]
 
   return(
