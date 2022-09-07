@@ -1,5 +1,10 @@
 import React from "react";
 
+import {
+  BrowserRouter as Router,
+  useRoutes,
+} from "react-router-dom";
+
 import NavBar from "./components/NavBar";
 import Landing from "./components/Landing";
 import About from "./components/About";
@@ -8,22 +13,37 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-//import {ScrollContainer} from "react-scroll-motion";
+import {ScrollContainer} from "react-scroll-motion";
 
-function App() {
-
+const MainPage = () => {
   return (
     <div id="website-container">
       <NavBar />
-      <Landing />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+      <ScrollContainer>
+        <Landing />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </ScrollContainer>
     </div>
   );
 }
 
+const App = () => {
+  let routes = useRoutes([
+    { path: "/", element: <MainPage /> },
+  ]);
+  return routes;
+};
 
-export default App;
+const AppWrapper = () => {
+  return (
+    <Router>
+      <App />
+    </Router>
+  );
+};
+
+export default AppWrapper;
