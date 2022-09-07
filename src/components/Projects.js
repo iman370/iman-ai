@@ -18,7 +18,7 @@ function Projects() {
       desc: 'An AI that plays tic-tac-toe using the minimax algorithm.',
       type: 'AI',
       languages: 'React.js, javascript',
-      link: 'https://iman-ai.tech/tictactoe',
+      link: '../tictactoe',
       githubLink: 'https://github.com/iman370/iman-ai/tree/main/src/projects/tictactoe',
     },
     {
