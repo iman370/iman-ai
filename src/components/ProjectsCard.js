@@ -1,5 +1,6 @@
 import React from "react";
 import githubLogo from './images/github-logo.png';
+import codeicon from './images/codeicon.png';
 
 function ProjectsCard({title, desc, type, languages, link, githubLink}) {
   return (
@@ -14,6 +15,9 @@ function ProjectsCard({title, desc, type, languages, link, githubLink}) {
           <p>{languages}</p>
           <a href={githubLink}>
             <img className="logos" src={githubLogo} alt="GitHub"/>
+          </a>
+          <a href={link}>
+            <img className="logos" src={codeicon} alt="Website"/>
           </a>
         </div>
     </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 
-function TTTBoard() {
+function tictactoe() {
     return(
         <p>aaaaa</p>
     )
 }
 
-export default TTTBoard
+export default tictactoe

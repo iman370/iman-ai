@@ -13,6 +13,9 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+// Projects
+import tictactoe from "./projects/tictactoe/tictactoe";
+
 import {ScrollContainer} from "react-scroll-motion";
 
 const MainPage = () => {
@@ -34,6 +37,7 @@ const MainPage = () => {
 const App = () => {
   let routes = useRoutes([
     { path: "/", element: <MainPage /> },
+    { path: "/tictactoe", element: <tictactoe /> },
   ]);
   return routes;
 };
