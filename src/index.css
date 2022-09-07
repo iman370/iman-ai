@@ -34,6 +34,10 @@ code {
   height: 20vh;
 }
 
+.divider-small-vh {
+  height: 10vh;
+}
+
 /* ANIMATIONS */
 
 
@@ -73,6 +77,10 @@ code {
 }
 
 .navbar p {
+  color:#a6e1fa;
+}
+
+.navbar a {
   color:#a6e1fa;
 }
 
@@ -151,7 +159,7 @@ code {
   font-size: 4rem;
   line-height: 1.2;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: .15em solid #0a2472; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
@@ -472,4 +480,73 @@ code {
 .contacts-container .logos {
   height: 3rem;
   width: 3rem;
+}
+
+/* TICTACTOE GAME */
+#tictactoe-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#tictactoe-container #content {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-column-gap: 0.5rem;
+  justify-items: start;
+  align-items: start;
+}
+
+#tictactoe-container #content #column1 {
+  justify-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#tictactoe-container #content #column1 .back-button {
+  width: 50%;
+  align-self: center;
+  color: #0e6ba8;
+}
+
+#tictactoe-container #content #column2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#tictactoe-container #content #column2 .heading {
+  position: relative;
+  padding: 0;
+  text-align: left;
+}
+
+#tictactoe-container #content #column2 .heading .typewriter h1 {
+  color: #a6e1fa;
+  font-family: monospace;
+  font-size: 2rem;
+  line-height: 1.2;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #0a2472; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+#tictactoe-container #content #column2 #board-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 1%;
+  grid-row-gap: 1%;
+  justify-items: stretch;
+  align-items: stretch;
 }
