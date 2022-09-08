@@ -10,12 +10,23 @@ function About() {
         <div className='about-container'>
             <div id='about-content'>
                 <div className='column1'>
-                    <div className='divider-smaller-vh' />
+                    <div className='divider-smallest-vh' />
                     <img src={imanpic} className="aboutmeImage" alt="Iman in Scotland" />
+                    <div className='divider-smallest-vh' />
                     <p>Outside of work, I love to go skateboarding and play video games! My favourite game is Assassins Creed Syndicate. I'm a huge fan of Industrial and Victorian England.</p>
                 </div>
                 <div className='column2'>
-                    <p>Hi, <b>Iman</b> here!</p>
+                    <div className='header'>
+                        <h1>iman-ai<b>.about()</b></h1>
+                    </div>
+                    <div className='divider-smaller-vh' />
+                    <p>Hi 👋🏽 <b>Iman</b> here!</p>
+                    <div className='divider-smaller-vh' />
+                    <p>I'm a final year <b>Computer Science</b> student studying a Bachelors at the <b>University of Birmingham</b>.</p>
+                    <div className='divider-smaller-vh' />
+                    <p>I'm interested in Software Engineering, Full-Stack Development (mainly back-end development) and most importantly, Artificial Intelligence and Machine Learning.</p>
+                    <div className='divider-smaller-vh' />
+                    <p>I have a passion for learning new skills and technologies. I'm currently learning about Natural Language Processing as well as how to use AWS (Amazon Web Services).</p>
                 </div>
             </div>
         </div>
