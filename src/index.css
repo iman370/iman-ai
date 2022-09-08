@@ -38,6 +38,14 @@ code {
   height: 10vh;
 }
 
+.divider-smaller-vh {
+  height: 4vh;
+}
+
+.divider-smallest-vh {
+  height: 2vh;
+}
+
 /* ANIMATIONS */
 
 
@@ -189,7 +197,7 @@ code {
 
 /* ABOUT ME */
 .about-container {
-  height: 100vh;
+  min-height: 100vh;
   width:100%;
   position: relative;
   padding: 0;
@@ -201,13 +209,47 @@ code {
   align-content: center;
 }
 
+.about-container #about-content {
+  background-color: #a6e1fa;
+  width: 80%;
+  position: relative;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 10px;
+  justify-items: center;
+  align-items: start;
+}
+
+.about-container #about-content .column1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  margin-left: 5%;
+}
+
+.about-container #about-content .column1 .aboutmeImage {
+  align-self: center;
+  width: 80%;
+  height: 80%;
+}
+
+.about-container #about-content .column2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+}
+
 .about-container .header {
   display: block;
   width: 100%;
 }
 
 .about-container .header h1 {
-  color: #a6e1fa;
+  color: #00072d;
   font-size: 40px;
   line-height: 1.2;
   margin: 0;
@@ -220,7 +262,7 @@ code {
   margin: 0;
 }
 
-.about-container .about-me {
+.about-container #content {
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -228,15 +270,15 @@ code {
   padding-right: 30px;
 }
 
-.about-container .about-me p {
-  color: #a6e1fa;
-  font-size: 30px;
+.about-container #content p {
+  color: #00072d;
+  font-size: 0.9rem;
   line-height: 1.2;
   margin: 0;
   align-self: center;
 }
 
-.about-container .about-me b {
+.about-container #content b {
   color: #0e6ba8;
   font-size: 30px;
   line-height: 1.2;
