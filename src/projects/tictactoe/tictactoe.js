@@ -157,7 +157,6 @@ function calculateWinner(squares) {
 
 /* AI */
 
-// Making the AI play a random (valid) move
 function AI(squares) {
     const validMoves = [];
 
@@ -167,9 +166,10 @@ function AI(squares) {
         }
     }
 
-    const randMove = validMoves[Math.floor(Math.random() * validMoves.length)];
+    // Making the AI play a random (valid) move
+    const move = validMoves[Math.floor(Math.random() * validMoves.length)];
 
-    return randMove
+    return move
 }
 
 
