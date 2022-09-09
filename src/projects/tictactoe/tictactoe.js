@@ -97,7 +97,7 @@ class Game extends React.Component {
             } else {
                 status = "Winner: AI";
             }
-        } if (this.state.stepNumber === 9) {
+        } else if (this.state.stepNumber === 9) {
             status = "Game Ended in a Draw";
         } else {
             status = (this.state.playerIsNext ? "Your turn" : "AI turn");
