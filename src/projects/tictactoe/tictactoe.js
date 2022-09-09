@@ -59,9 +59,10 @@ class Game extends React.Component {
         };
     }
 
-    handleClick(i) {
+    playMove(i) {
         const current = this.state.board;
         const squares = current.squares.slice();
+        //If there's a winner or this square has already been played then nothing will change
         if (calculateWinner(squares) || squares[i]) {
             return;
         }
@@ -74,6 +75,14 @@ class Game extends React.Component {
             stepNumber: (this.state.stepNumber + 1),
             playerIsNext: !this.state.playerIsNext
         });
+    }
+
+    handleClick(i) {
+        this.playMove(i);
+    }
+
+    playAI() {
+        this.playMove(AI(this.state.board.squares));
     }
 
     newGame() {
@@ -101,6 +110,9 @@ class Game extends React.Component {
             status = "Game Ended in a Draw";
         } else {
             status = (this.state.playerIsNext ? "Your turn" : "AI turn");
+            if (status === "AI turn") {
+                this.playAI();
+            }
         }
 
         return (
@@ -142,8 +154,26 @@ function calculateWinner(squares) {
     }
     return null;
 }
-  
 
+/* AI */
+
+// Making the AI play a random (valid) move
+function AI(squares) {
+    const validMoves = [];
+
+    for (var i = 0; i < squares.length; i++) {
+        if (!squares[i]) {
+            validMoves.push(i);
+        }
+    }
+
+    const randMove = validMoves[Math.floor(Math.random() * validMoves.length)];
+
+    return randMove
+}
+
+
+/* make page */
 function Tictactoe() {
     return(
         <div id="tictactoe-container">

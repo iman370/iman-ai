@@ -624,3 +624,7 @@ code {
 #tictactoe-container #content #column2 .game-info {
   margin-left: 20px;
 }
+
+#tictactoe-container #content #column2 .game-info h2 {
+  color: #a6e1fa;
+}
