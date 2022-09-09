@@ -14,6 +14,14 @@ function Projects() {
       githubLink: 'https://github.com/iman370/klabber',
     },
     {
+      title: 'tic-tac-toe',
+      desc: 'An AI that plays tic-tac-toe using the minimax algorithm.',
+      type: 'AI',
+      languages: 'React.js, javascript',
+      link: '../tictactoe',
+      githubLink: 'https://github.com/iman370/iman-ai/tree/main/src/projects/tictactoe',
+    },
+    {
       title: 'Cat and Dog Image Classifier',
       desc: 'Using a convolutional neural network to classify images of cats and dogs.',
       type: 'Machine Learning',

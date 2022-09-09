@@ -556,6 +556,7 @@ code {
 }
 
 #tictactoe-container #content #column2 .heading {
+  width: fit-content;
   position: relative;
   padding: 0;
   text-align: left;
@@ -576,12 +577,50 @@ code {
     blink-caret .5s step-end infinite;
 }
 
-#tictactoe-container #content #column2 #board-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-  grid-column-gap: 1%;
-  grid-row-gap: 1%;
-  justify-items: stretch;
-  align-items: stretch;
+/* TICTACTOE BOARD */
+#tictactoe-container #content #column2 ol, ul {
+  padding-left: 30px;
+}
+
+#tictactoe-container #content #column2 .board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+#tictactoe-container #content #column2 .status {
+  margin-bottom: 10px;
+}
+
+#tictactoe-container #content #column2 .square {
+  background: #0e6ba8;
+  border: 3px solid #00072d;
+  float: left;
+  color: #a6e1fa;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  line-height: 20vh;
+  height: 20vh;
+  width: 20vh;
+}
+
+#tictactoe-container #content #column2 .square:focus {
+  outline: none;
+}
+
+#tictactoe-container #content #column2 .kbd-navigation .square:focus {
+  background: #0e6ba8;
+}
+
+#tictactoe-container #content #column2 .game {
+  display: flex;
+  flex-direction: row;
+}
+
+#tictactoe-container #content #column2 .game-info {
+  margin-left: 20px;
 }
