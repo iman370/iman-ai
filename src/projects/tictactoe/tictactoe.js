@@ -159,17 +159,49 @@ function calculateWinner(squares) {
 
 function AI(squares) {
     const validMoves = [];
+    const scores = [];
 
     for (var i = 0; i < squares.length; i++) {
         if (!squares[i]) {
             validMoves.push(i);
+            scores.push(get_heuristic([...squares], validMoves[(validMoves.length - 1)]));
         }
     }
 
+    const max = Math.max(...scores);
+    const index = scores.indexOf(max);
+    const move = validMoves[index];
+
     // Making the AI play a random (valid) move
-    const move = validMoves[Math.floor(Math.random() * validMoves.length)];
+    //const move = validMoves[Math.floor(Math.random() * validMoves.length)];
 
     return move
+}
+
+//player: either 'X' or 'O'
+//n: number of squares in a row (max 3 (winning move))
+//board: a copy of the current game board
+//move: the index of where the next move will be
+function count_squares(player, n, board) {
+    const num_squares = 0
+    //horizontal
+
+    //vertical
+
+    //positive diagonal
+
+    //negative diagonal
+
+    return num_squares
+}
+
+function get_heuristic(board, move) {
+    board[move] = 'O';
+    const num_threes = count_squares('O', 3, board);
+    const num_twos = count_squares('O', 2, board);
+    const num_threes_opp = count_squares('X', 3, board);
+    const score = (1000 * num_threes) + (1 * num_twos) - (1000 * num_threes_opp);
+    return score
 }
 
 
