@@ -167,13 +167,10 @@ function AI(squares) {
             scores.push(get_heuristic([...squares], validMoves[(validMoves.length - 1)]));
         }
     }
-    console.log(scores);
 
     const max = Math.max(...scores);
     const index = scores.indexOf(max);
     const move = validMoves[index];
-    console.log("move:");
-    console.log(move);
 
     // Making the AI play a random (valid) move
     //const move = validMoves[Math.floor(Math.random() * validMoves.length)];
@@ -187,10 +184,10 @@ function AI(squares) {
 //move: the index of where the next move will be
 function count_squares(player, n, board) {
     let num_squares = 0
+    //horizontal
     for (var i = 0; i < 9; i += 3) {
         let player_squares = 0;
-        //horizontal
-        for (var j = 0; i < 3; i++) {
+        for (var j = 0; j < 3; j++) {
             const current_square = board[i+j];
             if (current_square === player) {
                 player_squares += 1;
@@ -202,15 +199,51 @@ function count_squares(player, n, board) {
         if (player_squares === n) {
             num_squares += 1;
         }
-        
     }
-    //horizontal
-
     //vertical
-
-    //positive diagonal
-
-    //negative diagonal
+    for (var k = 0; k < 3; k++) {
+        let player_squares = 0;
+        for (var l = 0; l < 9; l += 3) {
+            const current_square = board[k+l];
+            if (current_square === player) {
+                player_squares += 1;
+            } else if (current_square && current_square !== player) {
+                player_squares = 0;
+                break;
+            }
+        }
+        if (player_squares === n) {
+            num_squares += 1;
+        }
+    }
+    //positive diagonal (2,4,6)
+    const postive = [2,4,6]; 
+    let player_squares_p = 0;
+    for (var m=0; m < postive.length; m++) {
+        if (board[postive[m]] === player) {
+            player_squares_p += 1;
+        } else if (board[postive[m]] && board[postive[m]] !== player) {
+            player_squares_p = 0;
+            break;
+        }
+    }
+    if (player_squares_p === n) {
+        num_squares += 1;
+    }
+    //negative diagonal (1,4,8)
+    const negative = [1,4,8]; 
+    let player_squares_n = 0;
+    for (var p=0; p < negative.length; p++) {
+        if (board[negative[m]] === player) {
+            player_squares_n += 1;
+        } else if (board[negative[p]] && board[negative[p]] !== player) {
+            player_squares_n = 0;
+            break;
+        }
+    }
+    if (player_squares_n === n) {
+        num_squares += 1;
+    }
 
     return num_squares
 }
