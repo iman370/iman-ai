@@ -167,10 +167,13 @@ function AI(squares) {
             scores.push(get_heuristic([...squares], validMoves[(validMoves.length - 1)]));
         }
     }
+    console.log(scores);
 
     const max = Math.max(...scores);
     const index = scores.indexOf(max);
     const move = validMoves[index];
+    console.log("move:");
+    console.log(move);
 
     // Making the AI play a random (valid) move
     //const move = validMoves[Math.floor(Math.random() * validMoves.length)];
@@ -183,7 +186,24 @@ function AI(squares) {
 //board: a copy of the current game board
 //move: the index of where the next move will be
 function count_squares(player, n, board) {
-    const num_squares = 0
+    let num_squares = 0
+    for (var i = 0; i < 9; i += 3) {
+        let player_squares = 0;
+        //horizontal
+        for (var j = 0; i < 3; i++) {
+            const current_square = board[i+j];
+            if (current_square === player) {
+                player_squares += 1;
+            } else if (current_square && current_square !== player) {
+                player_squares = 0;
+                break;
+            }
+        }
+        if (player_squares === n) {
+            num_squares += 1;
+        }
+        
+    }
     //horizontal
 
     //vertical
