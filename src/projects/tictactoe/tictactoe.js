@@ -179,7 +179,7 @@ function AI(squares) {
 }
 
 //player: either 'X' or 'O'
-//n: number of squares in a row (max 3 (winning move))
+//n: number of squares in a row (max 3 (winning move), min 2)
 //board: a copy of the current game board
 //move: the index of where the next move will be
 function count_squares(player, n, board) {
