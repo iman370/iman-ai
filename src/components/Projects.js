@@ -6,7 +6,7 @@ function Projects() {
 
   const project_stack = [
     {
-      title: 'klabber',
+      title: 'Social Media Website',
       desc: 'This is a twitter-like social media website where you can also host and join events.',
       type: 'Full-Stack',
       languages: 'Django, React.js, REST API',
