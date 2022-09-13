@@ -3,6 +3,7 @@ import githubLogo from './images/github-logo.png';
 import codeicon from './images/codeicon.png';
 
 function ProjectsCard({title, desc, type, languages, link, githubLink}) {
+  const webLink = [link];
   return (
   <div class="project-card">
     <div class="flip">
@@ -16,9 +17,16 @@ function ProjectsCard({title, desc, type, languages, link, githubLink}) {
           <a href={githubLink}>
             <img className="logos" src={githubLogo} alt="GitHub"/>
           </a>
-          <a href={link}>
-            <img className="logos" src={codeicon} alt="Website"/>
-          </a>
+          {webLink.map(function (link){
+            if (link!=='N/A') {
+              return (
+                <a href={link}>
+                  <img className="logos" src={codeicon} alt="Website"/>
+                </a>
+              )
+            }
+            return(<div/>)
+          })}
         </div>
     </div>
   </div>
