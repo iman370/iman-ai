@@ -550,6 +550,14 @@ code {
   color: #0e6ba8;
 }
 
+#tictactoe-container #content #column1 h2 {
+  color: #a6e1fa;
+}
+
+#tictactoe-container #content #column1 h3 {
+  color: #0e6ba8;
+}
+
 #tictactoe-container #content #column2 {
   display: flex;
   flex-direction: column;

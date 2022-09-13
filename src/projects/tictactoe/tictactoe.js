@@ -21,6 +21,9 @@ function Tictactoe() {
             <div id="content">
                 <div id="column1">
                     <Button className='back-button' href='../'>🠔 Back</Button>
+                    <div className='divider' />
+                    <h2>What is minimax?</h2>
+                    <h3>The minimax algorithm tries to maximise the minimum while the opponent tries to minimise the maximum. It is best used in 2 player turn-based games where player 1 attempts to acheive the best-case outcome (player 1 wins) while player 2 attempts to achieve the worst-case outcome (player 1 loses).</h3>
                 </div>
                 <div id="column2">
                     <div className='heading'>
