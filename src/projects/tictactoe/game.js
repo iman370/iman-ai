@@ -170,7 +170,6 @@ function AI(squares) {
             scores.push(minimax([...squares], validMoves[(validMoves.length - 1)],3,-Infinity,Infinity,true))
         }
     }
-    console.log(scores);
 
     const max = Math.max(...scores);
     const index = scores.indexOf(max);
@@ -277,8 +276,7 @@ function minimax(board, move, depth, alpha, beta, maximisingPlayer) {
         }
     }
 
-    //check for winning move too
-    if (depth === 0 || validMoves.length === 0) {
+    if (depth === 0 || validMoves.length === 0 || calculateWinner(board)) {
         return get_heuristic(board);
     }
 
