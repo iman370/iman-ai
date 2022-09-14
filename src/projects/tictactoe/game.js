@@ -156,27 +156,7 @@ function calculateWinner(squares) {
 
 /* AI */
 function AI(squares) {
-    const validMoves = [];
-    const scores = [];
-
-    for (var i = 0; i < squares.length; i++) {
-        if (!squares[i]) {
-            validMoves.push(i);
-            // Makes the AI think one move ahead
-            //scores.push(get_heuristic([...squares], validMoves[(validMoves.length - 1)]));
-
-            scores.push(minimax([...squares], i,-Infinity,Infinity,true));
-        }
-    }
-    console.log(scores); // removee
-    const max = Math.max(...scores);
-    const index = scores.indexOf(max);
-    const move = validMoves[index];
-
-    // Making the AI play a random (valid) move
-    //const move = validMoves[Math.floor(Math.random() * validMoves.length)];
-
-    return move
+    return minimax([...squares], true)[0];
 }
 
 function get_validMoves(board) {
@@ -189,57 +169,48 @@ function get_validMoves(board) {
     return validMoves;
 }
 
-//move is the index of the next move
-function minimax(board, move, alpha, beta, maximisingPlayer) {
-    if (maximisingPlayer) {
-        board[move] = 'O';
-    } else {
-        board[move] = 'X';
-    }
-    
-    const validMoves = [];
-    //get list of all valid moves
-    for (var i = 0; i < board.length; i++) {
-        if (!board[i]) {
-            validMoves.push(i);
-        }
-    }
+function minimax(board, maximisingPlayer) {
+    const currentPlayer = maximisingPlayer ? "O" : "X";
+    const validMoves = get_validMoves(board);
+    let bestMove; //[bestMove, score]
 
     const winner = calculateWinner(board);
-    if (validMoves.length === 0 || winner) {
-        //return (get_heuristic(board) * (validMoves.length + 1));
+    if (winner) {
         if (winner === 'X') {
-            return (-10 * (validMoves.length + 1));
-        } else if (winner === 'O') {
-            return (10 * (validMoves.length + 1));
+            return [null, (-10 * (validMoves.length + 1))];
         } else {
-            return 0;
+            return [null, (10 * (validMoves.length + 1))];
         }
+    } else if (validMoves.length === 0) {
+        return [null, 0];
     }
 
     if (maximisingPlayer) {
-        let maxEval = -Infinity;
-        for (var j = 0; j<validMoves.length; j++) {
-            let evaluation = minimax([...board], validMoves[j], alpha, beta, false);
-            maxEval = Math.max(maxEval,evaluation);
-            alpha = Math.max(alpha,evaluation);
-            if (beta <= alpha) {
-                break;
-            }
-        }
-        return maxEval;
+        bestMove = [null, -Infinity];
     } else {
-        let minEval = Infinity;
-        for (var k = 0; k<validMoves.length; k++) {
-            let evaluation = minimax([...board], validMoves[k], alpha, beta, true);
-            minEval = Math.min(minEval,evaluation);
-            beta = Math.min(beta,evaluation);
-            if (beta <= alpha) {
-                break;
+        bestMove = [null, Infinity];
+    }
+
+    for (var i=0; i<validMoves.length; i++) {
+        const currentMove = validMoves[i];
+        board[currentMove] = currentPlayer;
+
+        const score = (minimax(board, !maximisingPlayer));
+
+        board[currentMove] = null;
+        score[0] = currentMove;
+
+        if (maximisingPlayer) {
+            if (score[1] > bestMove[1]) {
+                bestMove = score;
+            }
+        } else {
+            if (score[1] < bestMove[1]) {
+                bestMove = score;
             }
         }
-        return minEval;
     }
+    return bestMove;
 }
 
 export default Game
