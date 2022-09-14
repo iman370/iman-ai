@@ -166,8 +166,7 @@ function AI(squares) {
             // Makes the AI think one move ahead
             //scores.push(get_heuristic([...squares], validMoves[(validMoves.length - 1)]));
 
-            // minimax algorithm - depth: 3
-            scores.push(minimax([...squares], validMoves[(validMoves.length - 1)],8,-Infinity,Infinity,true));
+            scores.push(minimax([...squares], i,-Infinity,Infinity,true));
         }
     }
     console.log(scores); // removee
@@ -182,12 +181,13 @@ function AI(squares) {
 }
 
 //move is the index of the next move
-function minimax(board, move, depth, alpha, beta, maximisingPlayer) {
+function minimax(board, move, alpha, beta, maximisingPlayer) {
     if (maximisingPlayer) {
         board[move] = 'O';
     } else {
         board[move] = 'X';
     }
+    
     const validMoves = [];
     //get list of all valid moves
     for (var i = 0; i < board.length; i++) {
@@ -197,7 +197,7 @@ function minimax(board, move, depth, alpha, beta, maximisingPlayer) {
     }
 
     const winner = calculateWinner(board);
-    if (depth === 0 || validMoves.length === 0 || winner) {
+    if (validMoves.length === 0 || winner) {
         //return (get_heuristic(board) * (validMoves.length + 1));
         if (winner === 'X') {
             return (-10 * (validMoves.length + 1));
@@ -211,7 +211,7 @@ function minimax(board, move, depth, alpha, beta, maximisingPlayer) {
     if (maximisingPlayer) {
         let maxEval = -Infinity;
         for (var j = 0; j<validMoves.length; j++) {
-            let evaluation = minimax([...board], validMoves[j], (depth-1), alpha, beta, false);
+            let evaluation = minimax([...board], validMoves[j], alpha, beta, false);
             maxEval = Math.max(maxEval,evaluation);
             alpha = Math.max(alpha,evaluation);
             if (beta <= alpha) {
@@ -222,7 +222,7 @@ function minimax(board, move, depth, alpha, beta, maximisingPlayer) {
     } else {
         let minEval = Infinity;
         for (var k = 0; k<validMoves.length; k++) {
-            let evaluation = minimax([...board], validMoves[k], (depth-1), alpha, beta, true);
+            let evaluation = minimax([...board], validMoves[k], alpha, beta, true);
             minEval = Math.min(minEval,evaluation);
             beta = Math.min(beta,evaluation);
             if (beta <= alpha) {
