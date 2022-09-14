@@ -155,7 +155,6 @@ function calculateWinner(squares) {
 }
 
 /* AI */
-
 function AI(squares) {
     const validMoves = [];
     const scores = [];
@@ -178,6 +177,16 @@ function AI(squares) {
     //const move = validMoves[Math.floor(Math.random() * validMoves.length)];
 
     return move
+}
+
+function get_validMoves(board) {
+    const validMoves = [];
+    for (var i=0; i<board.length; i++) {
+        if (!board[i]) {
+            validMoves.push(i);
+        }
+    }
+    return validMoves;
 }
 
 //move is the index of the next move
