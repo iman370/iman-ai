@@ -218,6 +218,7 @@ code {
   grid-template-columns: 40% 60%;
   justify-items: center;
   align-items: start;
+  border-radius: 3%;
 }
 
 .about-container #about-content .column1 {
