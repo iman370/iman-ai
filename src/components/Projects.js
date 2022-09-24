@@ -27,7 +27,7 @@ function Projects() {
       type: 'Machine Learning',
       languages: 'Tensorflow, keras',
       link: 'https://colab.research.google.com/drive/1TcI-iIH7O9mSr3-lEgcjvNF9tAAs4LDX?usp=sharing',
-      githubLink: 'https://github.com/iman370/FCC-ML-with-python/blob/main/Projects/Copy_of_fcc_cat_dog.ipynb',
+      githubLink: 'https://github.com/iman370/FCC-ML-with-python/tree/main/Projects',
     },
     {
       title: 'Book Recommendation using KNN',
@@ -35,7 +35,7 @@ function Projects() {
       type: 'Machine Learning',
       languages: 'scikit-learn, pandas',
       link: 'https://colab.research.google.com/drive/1Shs7fQQDav5nhUpQ7AMwUBjSEiM48iVJ?usp=sharing',
-      githubLink: 'https://github.com/iman370/FCC-ML-with-python/blob/main/Projects/fcc_book_recommendation_knn.ipynb',
+      githubLink: 'https://github.com/iman370/FCC-ML-with-python/tree/main/Projects',
     },
     {
       title: 'Health Costs Calculator using Linear Regression',
@@ -43,7 +43,7 @@ function Projects() {
       type: 'Machine Learning',
       languages: 'Tensorflow, keras, pandas',
       link: 'https://colab.research.google.com/drive/1cJhYNmL2vRwwvaM4L5nctsUYk0gMnNt8?usp=sharing',
-      githubLink: 'https://github.com/iman370/FCC-ML-with-python/blob/main/Projects/Copy_of_fcc_predict_health_costs_with_regression.ipynb',
+      githubLink: 'https://github.com/iman370/FCC-ML-with-python/tree/main/Projects',
     },
     {
       title: 'Neural Network SMS Classifier',
@@ -51,7 +51,7 @@ function Projects() {
       type: 'Machine Learning, NLP',
       languages: 'Tensorflow, keras, pandas',
       link: 'https://colab.research.google.com/drive/1x5jd2pliPuutha7SsmJn0haVti-59-t_?usp=sharing',
-      githubLink: 'https://github.com/iman370/FCC-ML-with-python/blob/main/Projects/Copy_of_fcc_sms_text_classification.ipynb',
+      githubLink: 'https://github.com/iman370/FCC-ML-with-python/tree/main/Projects',
     },
     {
       title: 'Stroke Prediction',
