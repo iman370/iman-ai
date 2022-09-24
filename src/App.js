@@ -7,6 +7,7 @@ import {
 
 import NavBar from "./components/NavBar";
 import Landing from "./components/Landing";
+import MiniAboutMe from "./components/MiniAboutMe";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
@@ -24,6 +25,7 @@ const MainPage = () => {
       <NavBar />
       <ScrollContainer>
         <Landing />
+        <MiniAboutMe />
         <About />
         <Skills />
         <Projects />
