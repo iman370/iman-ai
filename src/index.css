@@ -400,6 +400,20 @@ code {
   align-items: center;
 }
 
+@media only screen and (max-width: 640px) {
+  .projects-container .project-stack {
+    display: grid;
+    max-width: 90%;
+    margin: 0 auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
 /* PROJECTS CARD */
 /* Link to this card */
 /* https://codepen.io/aron-tw/pen/pLJqgE */
