@@ -1,5 +1,6 @@
 import React from 'react';
 import imanpic from './images/imanpic.png'
+import Fade from 'react-reveal/Fade';
 
 //import { Animator, ScrollPage, batch, Fade, Move, Sticky} from "react-scroll-motion";
 
@@ -11,7 +12,9 @@ function About() {
             <div id='about-content'>
                 <div className='column1'>
                     <div className='divider-smallest-vh' />
-                    <img src={imanpic} className="aboutmeImage" alt="Iman in Scotland" />
+                    <Fade top>
+                        <img src={imanpic} className="aboutmeImage" alt="Iman in Scotland" />
+                    </Fade>
                     <div className='divider-smallest-vh' />
                     <p>Outside of work, I love to go skateboarding and play video games! My favourite game is Assassins Creed Syndicate. I'm a huge fan of Industrial and Victorian England.</p>
                 </div>
