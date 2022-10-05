@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 //import { Animator, ScrollPage, batch, FadeIn, Move, Sticky } from "react-scroll-motion";
 import ProjectsCard from './ProjectsCard';
 
@@ -66,19 +67,23 @@ function Projects() {
   return(
     <div className="projects-container">
       <div className='header'>
-        <h1>iman-ai<b>.projects()</b></h1>
+        <Fade top>
+          <h1>iman-ai<b>.projects()</b></h1>
+        </Fade>
         <div className='divider' />
       </div>
       <div className="project-stack">
         {project_stack.map(function (project){
           return(
-            <ProjectsCard
-            title={project.title}
-            desc={project.desc}
-            type={project.type}
-            languages={project.languages}
-            link={project.link}
-            githubLink={project.githubLink} />
+            <Fade top>
+              <ProjectsCard
+              title={project.title}
+              desc={project.desc}
+              type={project.type}
+              languages={project.languages}
+              link={project.link}
+              githubLink={project.githubLink} />
+            </Fade>
           )
         })}
       </div>
