@@ -2,6 +2,15 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 //import { Animator, ScrollPage, batch, Fade, Move, Sticky } from "react-scroll-motion";
 
+//images
+import djangologo from "./images/django-logo.png";
+import linuxlogo from "./images/linux-logo.png";
+import manjarologo from "./images/manjaro-logo.png";
+import pythonlogo from "./images/python-logo.png";
+import reactlogo from "./images/react-logo.png";
+import restlogo from "./images/rest-logo.webp";
+import tensorflowlogo from "./images/tensorflow-logo.png";
+
 function Skills() {;
 
     const tech_stack = [
