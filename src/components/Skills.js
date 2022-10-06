@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageList, ImageListItem } from '@mui/material';
+import { ImageList, ImageListItem, ImageListItemBar } from '@mui/material';
 import Fade from 'react-reveal/Fade';
 //import { Animator, ScrollPage, batch, Fade, Move, Sticky } from "react-scroll-motion";
 
@@ -15,13 +15,34 @@ import tensorflowlogo from "./images/tensorflow-logo.png";
 function Skills() {;
 
     const tech_stack = [
-        ["Python", pythonlogo],
-        ["Linux", linuxlogo],
-        ["Manjaro (Currently using as a daily driver)", manjarologo],
-        ["Django", djangologo],
-        ["React", reactlogo],
-        ["REST API", restlogo],
-        ["TensorFlow", tensorflowlogo]
+        {
+            img: pythonlogo,
+            title: 'Python',
+        },
+        {
+            img: tensorflowlogo,
+            title: 'TensorFlow',
+        },
+        {
+            img: linuxlogo,
+            title: 'Linux',
+        },
+        {
+            img: manjarologo,
+            title: 'Manjaro (Currently using as a daily driver)',
+        },
+        {
+            img: djangologo,
+            title: 'Django',
+        },
+        {
+            img: reactlogo,
+            title: 'React.js',
+        },
+        {
+            img: restlogo,
+            title: 'REST API',
+        },
     ]
 
     return(
@@ -39,20 +60,22 @@ function Skills() {;
                     </Fade>
                     <div className='divider-small' />
                     <div className='technologies'>
-                        <ImageList variant="masonry" cols={4} gap={8}>
+                        <ImageList sx={{ width: 500, height: 450 }}>
                             {tech_stack.map((item) => (
-                                <Fade top>
-                                    <ImageListItem key={item}>
-                                        <img
-                                            src={`${item[1]}?w=248&fit=crop&auto=format`}
-                                            srcSet={`${item[1]}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                            alt={item[0]}
-                                            loading="lazy"
-                                        />
-                                    </ImageListItem>
-                                </Fade>
+                                <ImageListItem key={item.img}>
+                                <img
+                                    src={`${item.img}?w=248&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=3 3x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                                <ImageListItemBar
+                                    title={item.title}
+                                    position="below"
+                                />
+                                </ImageListItem>
                             ))}
-                        </ImageList>               
+                        </ImageList>             
                     </div>
                 </div>
             </div>
