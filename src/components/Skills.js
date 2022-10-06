@@ -1,4 +1,5 @@
 import React from 'react';
+import { ImageList, ImageListItem } from '@mui/material';
 import Fade from 'react-reveal/Fade';
 //import { Animator, ScrollPage, batch, Fade, Move, Sticky } from "react-scroll-motion";
 
@@ -14,14 +15,13 @@ import tensorflowlogo from "./images/tensorflow-logo.png";
 function Skills() {;
 
     const tech_stack = [
-        "Python",
-        "Tensorflow & Keras",
-        "HTML & CSS",
-        "React.js",
-        "Django",
-        "REST API",
-        "Java",
-        "Linux (using Manjaro as a daily driver)"
+        ["Python", pythonlogo],
+        ["Linux", linuxlogo],
+        ["Manjaro (Currently using as a daily driver)", manjarologo],
+        ["Django", djangologo],
+        ["React", reactlogo],
+        ["REST API", restlogo],
+        ["TensorFlow", tensorflowlogo]
     ]
 
     return(
@@ -39,13 +39,20 @@ function Skills() {;
                     </Fade>
                     <div className='divider-small' />
                     <div className='technologies'>
-                        {tech_stack.map(function (tech_item) {
-                        return (
-                            <Fade top>
-                                <p>⋄ {tech_item}</p>
-                            </Fade>
-                        );
-                        })}                
+                        <ImageList variant="masonry" cols={4} gap={8}>
+                            {tech_stack.map((item) => (
+                                <Fade top>
+                                    <ImageListItem key={item}>
+                                        <img
+                                            src={`${item[1]}?w=248&fit=crop&auto=format`}
+                                            srcSet={`${item[1]}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                            alt={item[0]}
+                                            loading="lazy"
+                                        />
+                                    </ImageListItem>
+                                </Fade>
+                            ))}
+                        </ImageList>               
                     </div>
                 </div>
             </div>
