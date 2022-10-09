@@ -60,12 +60,12 @@ function Skills() {;
                     </Fade>
                     <div className='divider-small' />
                     <div className='technologies'>
-                        <ImageList sx={{ width: 500, height: 450 }}>
+                        <ImageList sx={{ width: 500 }}>
                             {tech_stack.map((item) => (
                                 <ImageListItem key={item.img}>
                                 <img
-                                    src={`${item.img}?w=248&fit=crop&auto=format`}
-                                    srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=3 3x`}
+                                    className="logo"
+                                    src={item.img}
                                     alt={item.title}
                                     loading="lazy"
                                 />
