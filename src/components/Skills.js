@@ -62,18 +62,20 @@ function Skills() {;
                     <div className='technologies'>
                         <ImageList sx={{ width: 500 }}>
                             {tech_stack.map((item) => (
-                                <ImageListItem key={item.img}>
-                                <img
-                                    className="logo"
-                                    src={item.img}
-                                    alt={item.title}
-                                    loading="lazy"
-                                />
-                                <ImageListItemBar
-                                    title={item.title}
-                                    position="below"
-                                />
-                                </ImageListItem>
+                                <Fade top>
+                                    <ImageListItem key={item.img}>
+                                    <img
+                                        className="logo"
+                                        src={item.img}
+                                        alt={item.title}
+                                        loading="lazy"
+                                    />
+                                    <ImageListItemBar
+                                        title={item.title}
+                                        position="below"
+                                    />
+                                    </ImageListItem>
+                                </Fade>
                             ))}
                         </ImageList>             
                     </div>
