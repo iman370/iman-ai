@@ -1,4 +1,5 @@
 import React from 'react';
+import robot from './images/robot.png'
 
 //import { Animator, ScrollPage, batch, MoveOut, Sticky, Fade} from "react-scroll-motion";
 
@@ -6,6 +7,7 @@ function Landing() {
     return(
       <div className="landing-container">
         <div className='column1'>
+          <img src={robot} className="picture" alt="Robot"/>
         </div>
         <div className='column2'>
           <div className='heading'>

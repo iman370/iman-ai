@@ -169,7 +169,6 @@ code {
 .landing-container .column1 .picture {
   width: 80%;
   height: 80%;
-  border-radius: 50%;
 }
 
 .landing-container .column2 {
@@ -177,6 +176,7 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: left;
+  margin-left: 1%;
 }
 
 .landing-container .column2 .heading {
