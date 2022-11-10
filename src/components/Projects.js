@@ -23,6 +23,14 @@ function Projects() {
       githubLink: 'https://github.com/iman370/iman-ai/tree/main/src/projects/tictactoe',
     },
     {
+      title: 'Tutoring Website',
+      desc: 'Commissioned to make a personal website for a friend so that he can advertise his tutoring business.',
+      type: 'Front-end Development',
+      languages: 'React.js, javascript',
+      link: 'https://ghufran.vercel.app',
+      githubLink: 'https://github.com/iman370/ghufran-tutoring/tree/main/ghufran',
+    },
+    {
       title: 'Cat and Dog Image Classifier',
       desc: 'Using a convolutional neural network to classify images of cats and dogs.',
       type: 'Machine Learning',
