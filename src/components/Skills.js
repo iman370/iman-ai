@@ -11,6 +11,7 @@ import pythonlogo from "./images/python-logo.png";
 import reactlogo from "./images/react-logo.png";
 import restlogo from "./images/rest-logo.webp";
 import tensorflowlogo from "./images/tensorflow-logo.png";
+import pytorchlogo from "./images/pytorch-logo.png";
 
 function Skills() {;
 
@@ -22,6 +23,10 @@ function Skills() {;
         {
             img: tensorflowlogo,
             title: 'TensorFlow',
+        },
+        {
+            img: pytorchlogo,
+            title: 'PyTorch',
         },
         {
             img: linuxlogo,
@@ -69,10 +74,18 @@ function Skills() {;
                                         src={item.img}
                                         alt={item.title}
                                         loading="lazy"
+                                        style={{
+                                            display: 'block',
+                                            margin: '0 auto',
+                                          }}
                                     />
                                     <ImageListItemBar
+                                        className='text'
                                         title={item.title}
                                         position="below"
+                                        sx={{
+                                            textAlign: 'center',
+                                          }}
                                     />
                                     </ImageListItem>
                                 </Fade>
