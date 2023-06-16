@@ -34,6 +34,8 @@ function About() {
                         <div className='divider-smaller-vh' />
                         <p>I'm interested in Software Engineering, Full-Stack Development (mainly back-end development) and most importantly, Artificial Intelligence and Machine Learning.</p>
                         <div className='divider-smaller-vh' />
+                        <p>I regularly check Twitter and read up on recent news articles so that I can keenly follow the advancements made in AI.</p>
+                        <div className='divider-smaller-vh' />
                         <p>I have a passion for learning new skills and technologies. I'm currently learning about Natural Language Processing as well as how to use AWS (Amazon Web Services).</p>
                     </Fade>
                 </div>
