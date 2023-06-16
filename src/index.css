@@ -50,67 +50,28 @@ code {
 
 
 /* NAVIGATION BAR */
-.navbar {
-
-  /* ff 3.6+ */
-  background:-moz-linear-gradient(180deg, rgba(0, 7, 45, 1) 75%, rgba(0, 7, 45, 0) 100%); 
-
-  /* safari 5.1+,chrome 10+ */
-  background:-webkit-linear-gradient(180deg, rgba(0, 7, 45, 1) 75%, rgba(0, 7, 45, 0) 100%);
-
-  /* opera 11.10+ */
-  background:-o-linear-gradient(180deg, rgba(0, 7, 45, 1) 75%, rgba(0, 7, 45, 0) 100%);
-
-  /* ie 6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00072D', endColorstr='#00072D', GradientType=1 );
-
-  /* ie 10+ */
-  background:-ms-linear-gradient(180deg, rgba(0, 7, 45, 1) 75%, rgba(0, 7, 45, 0) 100%);
-
-  /* global 94%+ browsers support */
-  background:linear-gradient(180deg, rgba(0, 7, 45, 1) 75%, rgba(0, 7, 45, 0) 100%);
-
-  position: fixed; 
-  width: 100%;
-  top: 0;
-  z-index:100;
-
-  padding-left: 1rem;
-  padding-right: 1rem;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
+#navbar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 150px;
+  padding: 10px;
+  z-index: 9999;
+  overflow: hidden;
+  max-height: 200px;
 }
 
-.navbar p {
-  color:#a6e1fa;
-}
-
-.navbar a {
-  color:#a6e1fa;
-}
-
-.navbar .navbar_links {
-  display: flex;
-  flex-direction: row;
-  align-items: right;
-  flex: 1;
-}
-
-.navbar .navbar_links p {
-    color: #0e6ba8;
-    margin: 0 1rem;
-    font-size: medium;
-}
-
-.navbar .logo {
-  margin-right: 2rem;
-}
-
-.navbar .links {
+#navbar .links {
   cursor: pointer;
+}
+
+#navbar p {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-style: italic;
+  color: #a6e1fa;
+  text-align: right;
 }
 
 /* FOOTER */
