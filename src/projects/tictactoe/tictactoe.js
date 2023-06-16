@@ -10,12 +10,10 @@ function Tictactoe() {
     return(
         <div id="tictactoe-container">
             <Toolbar>
-                <div className='navbar'>
-                    <div className='logo'>
-                        <a href='../'>
-                            <p>iman-ai.tech()</p>
-                        </a>
-                    </div>
+                <div className='navbar-ttt'>
+                    <a href='../'>
+                        <p>iman-ai.tech()</p>
+                    </a>
                 </div>
             </Toolbar>
             <div id="content">

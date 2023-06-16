@@ -549,6 +549,8 @@ code {
   width: 3rem;
 }
 
+/* WEB-BASED PROJECTS */
+
 /* TICTACTOE GAME */
 #tictactoe-container {
   height: 100vh;
@@ -559,6 +561,28 @@ code {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+.navbar-ttt {
+  position: fixed; 
+  width: 100%;
+  top: 0;
+  z-index:100;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar-ttt p {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-style: italic;
+  color: #415A77;
+  text-decoration: none;
 }
 
 #tictactoe-container #content {
