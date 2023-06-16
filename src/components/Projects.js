@@ -23,6 +23,14 @@ function Projects() {
       githubLink: 'https://github.com/iman370/iman-ai/tree/main/src/projects/tictactoe',
     },
     {
+      title: 'Live Digit Recogniser',
+      desc: 'Draw a number and let the website guess the number!',
+      type: 'Machine Learning',
+      languages: 'React.js, javascript',
+      link: '../digit-recogniser',
+      githubLink: 'https://github.com/iman370/iman-ai/tree/main/src/projects/LiveDigitRecogniser',
+    },
+    {
       title: 'Tutoring Website',
       desc: 'Commissioned to make a personal website for a friend so that he can advertise his tutoring business.',
       type: 'Front-end Development',

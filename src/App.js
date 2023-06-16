@@ -16,6 +16,7 @@ import Footer from "./components/Footer";
 
 // Projects
 import Tictactoe from "./projects/tictactoe/tictactoe";
+import DigitRecogniser from "./projects/LiveDigitRecogniser/DigitRecogniser";
 
 import {ScrollContainer} from "react-scroll-motion";
 
@@ -40,6 +41,7 @@ const App = () => {
   let routes = useRoutes([
     { path: "/", element: <MainPage /> },
     { path: "/tictactoe", element: <Tictactoe /> },
+    { path: "/digit-recogniser", element: <DigitRecogniser /> },
   ]);
   return routes;
 };
