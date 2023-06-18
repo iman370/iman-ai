@@ -658,7 +658,7 @@ code {
 
 #tictactoe-container #content #column2 .square {
   background: #778DA9;
-  border: 3px solid #00072d;
+  border: 3px solid #0D1B2A;
   float: left;
   color: #E0E1DD;
   font-size: 3rem;
@@ -694,3 +694,24 @@ code {
 }
 
 /* LIVE DIGIT RECOGNISER */
+#ldr-container {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#ldr-container .ldr-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+}
+
+#ldr-container .ldr-header h1 {
+  color: #415A77;
+}
