@@ -6,10 +6,15 @@ const Canvas = () => {
 
   useEffect(() => {
     const canvas = canvasRef.current;
+
+    canvas.width = window.innerWidth / 2;
+    canvas.height = window.innerHeight / 2;
+    canvas.style.backgroundColor = '#000';
+
     const context = canvas.getContext('2d');
     context.lineWidth = 10;
     context.lineCap = 'round';
-    context.strokeStyle = '#000';
+    context.strokeStyle = '#E0E1DD';
   }, []);
 
   const startDrawing = (e) => {
