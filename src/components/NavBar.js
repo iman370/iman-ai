@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 function NavBar() {
   return (
     <div id="navbar">
-      <Link activeClass="active" className="links" to="landing-container" spy smooth duration={1500}>
+      <Link activeClass="active" className="links" to="about-container" spy smooth duration={1500}>
         <p>.about()</p>
       </Link>
       <Link activeClass="active" className="links" to="skills-container" spy smooth duration={1500}>
